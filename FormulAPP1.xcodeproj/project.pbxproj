@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE2B4E842DC0D19600CE03FE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BE2B4E832DC0D19600CE03FE /* Alamofire */; };
+		BE9A9EFE2DCE90CC00DFA698 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9A9CB02DC8C42A00DFA698 /* WidgetKit.framework */; };
+		BE9A9EFF2DCE90CC00DFA698 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9A9CB22DC8C42A00DFA698 /* SwiftUI.framework */; };
+		BE9A9F0A2DCE90CD00DFA698 /* FormulAPP1-widgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BE9A9EFD2DCE90CC00DFA698 /* FormulAPP1-widgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE9A9F082DCE90CD00DFA698 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEAE59702DB5122C00058521 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE9A9EFC2DCE90CC00DFA698;
+			remoteInfo = "FormulAPP1-widgetsExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE9A9CC92DC8C42C00DFA698 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BE9A9F0A2DCE90CD00DFA698 /* FormulAPP1-widgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE9A9CB02DC8C42A00DFA698 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BE9A9CB22DC8C42A00DFA698 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BE9A9EFD2DCE90CC00DFA698 /* FormulAPP1-widgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FormulAPP1-widgetsExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE9A9F2F2DD250D900DFA698 /* FormulAPP1-widgetsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FormulAPP1-widgetsExtension.entitlements"; sourceTree = "<group>"; };
+		BEAE59782DB5122C00058521 /* FormulAPP1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulAPP1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BE9A9F0B2DCE90CD00DFA698 /* Exceptions for "FormulAPP1-widgets" folder in "FormulAPP1-widgetsExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BE9A9EFC2DCE90CC00DFA698 /* FormulAPP1-widgetsExtension */;
+		};
+		BE9A9F252DCE92B900DFA698 /* Exceptions for "FormulAPP1" folder in "FormulAPP1-widgetsExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				App/PersistenceController.swift,
+				Common/helpers/LocalizedStringManager.swift,
+				Common/helpers/NotificationHelper.swift,
+				Common/helpers/UserPreferencesManager.swift,
+				Common/utils/CustomBackButton.swift,
+				Common/utils/SampleData.swift,
+				Common/utils/ViewsUtils.swift,
+				Data/datamodels/ConstructorDataModel.swift,
+				Data/datamodels/ConstructorStandingsDataModel.swift,
+				Data/datamodels/DriverDataModel.swift,
+				Data/datamodels/DriverStandingsDataModel.swift,
+				Data/datamodels/MRDataType.swift,
+				Data/datamodels/RaceDataModel.swift,
+				Data/FormulAPP1.xcdatamodeld,
+				Data/mappers/ConstructorMapper.swift,
+				Data/mappers/ConstructorStandingsMapper.swift,
+				Data/mappers/DriverMapper.swift,
+				Data/mappers/DriverStandingsMapper.swift,
+				Data/mappers/RaceMapper.swift,
+				Domain/domainmodels/ConstructorDomainModel.swift,
+				Domain/domainmodels/ConstructorStandingsDomainModel.swift,
+				Domain/domainmodels/DriverDomainModel.swift,
+				Domain/domainmodels/DriverStandingsDomainModel.swift,
+				Domain/domainmodels/MRDataDomainType.swift,
+				Domain/domainmodels/RaceDomainModel.swift,
+				Resources/Assets.xcassets,
+				Resources/localizations/Localizable.xcstrings,
+			);
+			target = BE9A9EFC2DCE90CC00DFA698 /* FormulAPP1-widgetsExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BE9A9F002DCE90CC00DFA698 /* FormulAPP1-widgets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BE9A9F0B2DCE90CD00DFA698 /* Exceptions for "FormulAPP1-widgets" folder in "FormulAPP1-widgetsExtension" target */,
+			);
+			path = "FormulAPP1-widgets";
+			sourceTree = "<group>";
+		};
+		BEAE597A2DB5122C00058521 /* FormulAPP1 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BE9A9F252DCE92B900DFA698 /* Exceptions for "FormulAPP1" folder in "FormulAPP1-widgetsExtension" target */,
+			);
+			path = FormulAPP1;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE9A9EFA2DCE90CC00DFA698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9A9EFF2DCE90CC00DFA698 /* SwiftUI.framework in Frameworks */,
+				BE9A9EFE2DCE90CC00DFA698 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAE59752DB5122C00058521 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2B4E842DC0D19600CE03FE /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE9A9CAF2DC8C42A00DFA698 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE9A9CB02DC8C42A00DFA698 /* WidgetKit.framework */,
+				BE9A9CB22DC8C42A00DFA698 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEAE596F2DB5122C00058521 = {
+			isa = PBXGroup;
+			children = (
+				BE9A9F2F2DD250D900DFA698 /* FormulAPP1-widgetsExtension.entitlements */,
+				BE9A9F002DCE90CC00DFA698 /* FormulAPP1-widgets */,
+				BE9A9CAF2DC8C42A00DFA698 /* Frameworks */,
+				BEAE59792DB5122C00058521 /* Products */,
+				BEAE597A2DB5122C00058521 /* FormulAPP1 */,
+			);
+			sourceTree = "<group>";
+		};
+		BEAE59792DB5122C00058521 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE59782DB5122C00058521 /* FormulAPP1.app */,
+				BE9A9EFD2DCE90CC00DFA698 /* FormulAPP1-widgetsExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE9A9EFC2DCE90CC00DFA698 /* FormulAPP1-widgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE9A9F0C2DCE90CD00DFA698 /* Build configuration list for PBXNativeTarget "FormulAPP1-widgetsExtension" */;
+			buildPhases = (
+				BE9A9EF92DCE90CC00DFA698 /* Sources */,
+				BE9A9EFA2DCE90CC00DFA698 /* Frameworks */,
+				BE9A9EFB2DCE90CC00DFA698 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BE9A9F002DCE90CC00DFA698 /* FormulAPP1-widgets */,
+			);
+			name = "FormulAPP1-widgetsExtension";
+			packageProductDependencies = (
+			);
+			productName = "FormulAPP1-widgetsExtension";
+			productReference = BE9A9EFD2DCE90CC00DFA698 /* FormulAPP1-widgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BEAE59772DB5122C00058521 /* FormulAPP1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAE59882DB5122D00058521 /* Build configuration list for PBXNativeTarget "FormulAPP1" */;
+			buildPhases = (
+				BEAE59742DB5122C00058521 /* Sources */,
+				BEAE59752DB5122C00058521 /* Frameworks */,
+				BEAE59762DB5122C00058521 /* Resources */,
+				BE9A9CC92DC8C42C00DFA698 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE9A9F092DCE90CD00DFA698 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BEAE597A2DB5122C00058521 /* FormulAPP1 */,
+			);
+			name = FormulAPP1;
+			packageProductDependencies = (
+				BE2B4E832DC0D19600CE03FE /* Alamofire */,
+			);
+			productName = FormulAPP1;
+			productReference = BEAE59782DB5122C00058521 /* FormulAPP1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEAE59702DB5122C00058521 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					BE9A9EFC2DCE90CC00DFA698 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					BEAE59772DB5122C00058521 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = BEAE59732DB5122C00058521 /* Build configuration list for PBXProject "FormulAPP1" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+				eu,
+			);
+			mainGroup = BEAE596F2DB5122C00058521;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BE2B4E822DC0D19600CE03FE /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BEAE59792DB5122C00058521 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEAE59772DB5122C00058521 /* FormulAPP1 */,
+				BE9A9EFC2DCE90CC00DFA698 /* FormulAPP1-widgetsExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE9A9EFB2DCE90CC00DFA698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAE59762DB5122C00058521 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE9A9EF92DCE90CC00DFA698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAE59742DB5122C00058521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE9A9F092DCE90CD00DFA698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE9A9EFC2DCE90CC00DFA698 /* FormulAPP1-widgetsExtension */;
+			targetProxy = BE9A9F082DCE90CD00DFA698 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BE9A9F0D2DCE90CD00DFA698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "FormulAPP1-widgetsExtension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = A5UCFNWB8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FormulAPP1-widgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "FormulAPP1-widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "es.upsa.mimo.FormulAPP1.FormulAPP1-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "FormulAPP1-widget";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE9A9F0E2DCE90CD00DFA698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "FormulAPP1-widgetsExtension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = A5UCFNWB8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FormulAPP1-widgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "FormulAPP1-widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "es.upsa.mimo.FormulAPP1.FormulAPP1-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "FormulAPP1-widget";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BEAE59862DB5122D00058521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEAE59872DB5122D00058521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEAE59892DB5122D00058521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FormulAPP1/FormulAPP1.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = A5UCFNWB8C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.upsa.mimo.FormulAPP1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = FormulAPP1;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEAE598A2DB5122D00058521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FormulAPP1/FormulAPP1.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = A5UCFNWB8C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.upsa.mimo.FormulAPP1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = FormulAPP1;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE9A9F0C2DCE90CD00DFA698 /* Build configuration list for PBXNativeTarget "FormulAPP1-widgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9A9F0D2DCE90CD00DFA698 /* Debug */,
+				BE9A9F0E2DCE90CD00DFA698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEAE59732DB5122C00058521 /* Build configuration list for PBXProject "FormulAPP1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAE59862DB5122D00058521 /* Debug */,
+				BEAE59872DB5122D00058521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEAE59882DB5122D00058521 /* Build configuration list for PBXNativeTarget "FormulAPP1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAE59892DB5122D00058521 /* Debug */,
+				BEAE598A2DB5122D00058521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE2B4E822DC0D19600CE03FE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE2B4E832DC0D19600CE03FE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE2B4E822DC0D19600CE03FE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BEAE59702DB5122C00058521 /* Project object */;
+}

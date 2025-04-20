@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23788" systemVersion="24E263" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Circuit" representedClassName="Circuit" syncable="YES" codeGenerationType="class">
+        <attribute name="circuitId" attributeType="String"/>
+        <attribute name="circuitName" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="URI"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location"/>
+        <relationship name="races" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Race" inverseName="circuit" inverseEntity="Race"/>
+    </entity>
+    <entity name="Constructor" representedClassName="Constructor" syncable="YES" codeGenerationType="class">
+        <attribute name="constructorId" optional="YES" attributeType="String"/>
+        <attribute name="nacionalidad" optional="YES" attributeType="String"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="URI"/>
+        <relationship name="constructorStandings" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="ConstructorStanding" inverseName="constructor" inverseEntity="ConstructorStanding"/>
+        <relationship name="driverStandings" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="DriverStanding" inverseName="constructores" inverseEntity="DriverStanding"/>
+    </entity>
+    <entity name="ConstructorStanding" representedClassName="ConstructorStanding" syncable="YES" codeGenerationType="class">
+        <attribute name="posicion" optional="YES" attributeType="String"/>
+        <attribute name="posicionTexto" optional="YES" attributeType="String"/>
+        <attribute name="puntos" optional="YES" attributeType="String"/>
+        <attribute name="victorias" optional="YES" attributeType="String"/>
+        <relationship name="constructor" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Constructor" inverseName="constructorStandings" inverseEntity="Constructor"/>
+    </entity>
+    <entity name="Driver" representedClassName="Driver" syncable="YES" codeGenerationType="class">
+        <attribute name="code" optional="YES" attributeType="String"/>
+        <attribute name="dateOfBirth" optional="YES" attributeType="String"/>
+        <attribute name="driverId" optional="YES" attributeType="String"/>
+        <attribute name="familyName" optional="YES" attributeType="String"/>
+        <attribute name="givenName" optional="YES" attributeType="String"/>
+        <attribute name="nationality" optional="YES" attributeType="String"/>
+        <attribute name="permanentNumber" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="URI"/>
+        <relationship name="driverStanding" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DriverStanding" inverseName="piloto" inverseEntity="DriverStanding"/>
+    </entity>
+    <entity name="DriverStanding" representedClassName="DriverStanding" syncable="YES" codeGenerationType="class">
+        <attribute name="posicion" optional="YES" attributeType="String"/>
+        <attribute name="puntos" optional="YES" attributeType="String"/>
+        <attribute name="victorias" optional="YES" attributeType="String"/>
+        <relationship name="constructores" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Constructor" inverseName="driverStandings" inverseEntity="Constructor"/>
+        <relationship name="piloto" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Driver" inverseName="driverStanding" inverseEntity="Driver"/>
+    </entity>
+    <entity name="Location" representedClassName="Location" syncable="YES" codeGenerationType="class">
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="lat" optional="YES" attributeType="String"/>
+        <attribute name="locality" optional="YES" attributeType="String"/>
+        <attribute name="long" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Race" representedClassName="Race" syncable="YES" codeGenerationType="class">
+        <attribute name="raceName" attributeType="String"/>
+        <attribute name="round" attributeType="String"/>
+        <attribute name="season" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="URI"/>
+        <relationship name="circuit" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Circuit" inverseName="races" inverseEntity="Circuit"/>
+        <relationship name="firstPractice" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Session"/>
+        <relationship name="qualifying" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Session"/>
+        <relationship name="raceSession" maxCount="1" deletionRule="Cascade" destinationEntity="Session"/>
+        <relationship name="secondPractice" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Session"/>
+        <relationship name="sprint" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Session"/>
+        <relationship name="sprintQualifying" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Session"/>
+        <relationship name="thirdPractice" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Session"/>
+    </entity>
+    <entity name="Session" representedClassName="Session" syncable="YES" codeGenerationType="class">
+        <attribute name="date" attributeType="String"/>
+        <attribute name="time" attributeType="String"/>
+    </entity>
+</model>
